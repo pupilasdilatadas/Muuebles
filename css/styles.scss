@@ -45,124 +45,125 @@ body{
 
 .header2{
     margin-left: 5rem;
-    margin-top: 2rem;
+    margin-top: 3rem;
     margin-bottom: 3rem;
 }
 
 .seccion1{
   margin-left: 3rem;
+  margin-right: 3rem;
   margin-top: 3rem;
 }
 
 .c1ak {
-    width: 100%; /* Ancho del contenedor principal */
-    max-width: 85%; /* Ancho máximo para limitar el tamaño del contenedor principal */
+    width: 100%; 
+    max-width: 85%; 
     margin-left: 5rem;
     border: 2px solid #7658b2;
   }
   
 .img-container {
-  font-size: 0; /* Evitar espacio adicional entre los elementos inline-block */
+  font-size: 0; 
 }
 
 .img-container > div {
-  display: inline-block; /* Permitir que los divs se ajusten al tamaño del contenido */
-  margin: 5px; /* Espacio entre las imágenes */
+  display: inline-block; 
+  margin: 5px;
   width: calc(25% - 10px); 
 }
 
 
 .imagenDiv1 {
-  display: inline-block; /* Permitir que el div se ajuste al tamaño del contenido */
-  max-width: 400px; /* Ancho máximo del div contenedor */
-  height: auto; /* Altura automática para adaptarse al contenido */
+  display: inline-block; 
+  max-width: 400px;
+  height: auto; 
   vertical-align: top;
 }
 .imagenDiv1 img {
-  width: 100%; /* Ancho de la imagen al 100% del div contenedor */
-  height: auto; /* Altura automática para mantener la proporción */
-  object-fit: cover; /* La imagen cubre completamente el contenedor */
+  width: 100%; 
+  height: auto; 
+  object-fit: cover; 
 }
 
 .imagenDiv2 {
-  display: inline-block; /* Permitir que el div se ajuste al tamaño del contenido */
-  max-width: 400px; /* Ancho máximo del div contenedor */
-  height: auto; /* Altura automática para adaptarse al contenido */
+  display: inline-block; 
+  max-width: 400px;
+  height: auto; 
 }
 .imagenDiv2 img {
-  width: 100%; /* Ancho de la imagen al 100% del div contenedor */
-  height: auto; /* Altura automática para mantener la proporción */
-  object-fit: cover; /* La imagen cubre completamente el contenedor */
+  width: 100%; 
+  height: auto; 
+  object-fit: cover; 
 }
 
 .imagenDiv3 {
-  display: inline-block; /* Permitir que el div se ajuste al tamaño del contenido */
-  max-width: 400px; /* Ancho máximo del div contenedor */
-  height: auto; /* Altura automática para adaptarse al contenido */
+  display: inline-block; 
+  max-width: 400px; 
+  height: auto; 
   vertical-align: top;
 }
 .imagenDiv3 img {
-  width: 100%; /* Ancho de la imagen al 100% del div contenedor */
-  height: auto; /* Altura automática para mantener la proporción */
-  object-fit: cover; /* La imagen cubre completamente el contenedor */
+  width: 100%; 
+  height: auto; 
+  object-fit: cover;
 }
 
 .imagenDiv4 {
-  display: inline-block; /* Permitir que el div se ajuste al tamaño del contenido */
-  max-width: 400px; /* Ancho máximo del div contenedor */
-  height: auto; /* Altura automática para adaptarse al contenido */
+  display: inline-block;
+  max-width: 400px; 
+  height: auto; 
   vertical-align: top;
 }
 .imagenDiv4 img {
-  width: 100%; /* Ancho de la imagen al 100% del div contenedor */
-  height: auto; /* Altura automática para mantener la proporción */
-  object-fit: cover; /* La imagen cubre completamente el contenedor */
+  width: 100%; 
+  height: auto; 
+  object-fit: cover; 
 }
 
 .imagenDiv5 {
-  display: inline-block; /* Permitir que el div se ajuste al tamaño del contenido */
-  max-width: 400px; /* Ancho máximo del div contenedor */
-  height: auto; /* Altura automática para adaptarse al contenido */
+  display: inline-block;
+  max-width: 400px;
+  height: auto;
 }
 .imagenDiv5 img {
-  width: 100%; /* Ancho de la imagen al 100% del div contenedor */
-  height: auto; /* Altura automática para mantener la proporción */
-  object-fit: cover; /* La imagen cubre completamente el contenedor */
+  width: 100%;
+  height: auto;
+  object-fit: cover;
 }
 
 .imagenDiv6 {
-  display: inline-block; /* Permitir que el div se ajuste al tamaño del contenido */
-  max-width: 400px; /* Ancho máximo del div contenedor */
-  height: auto; /* Altura automática para adaptarse al contenido */
+  display: inline-block;
+  max-width: 400px;
+  height: auto;
   vertical-align: bottom;
 }
 .imagenDiv6 img {
-  width: 100%; /* Ancho de la imagen al 100% del div contenedor */
-  height: auto; /* Altura automática para mantener la proporción */
-  object-fit: cover; /* La imagen cubre completamente el contenedor */
+  width: 100%;
+  height: auto;
+  object-fit: cover;
 }
 
 .imagenDiv7 {
-  display: inline-block; /* Permitir que el div se ajuste al tamaño del contenido */
-  max-width: 400px; /* Ancho máximo del div contenedor */
-  height: auto; /* Altura automática para adaptarse al contenido */
+  display: inline-block;
+  max-width: 400px;
+  height: auto;
   vertical-align: top;
 }
 .imagenDiv7 img {
-  width: 100%; /* Ancho de la imagen al 100% del div contenedor */
-  height: auto; /* Altura automática para mantener la proporción */
-  object-fit: cover; /* La imagen cubre completamente el contenedor */
+  width: 100%;
+  height: auto;
+  object-fit: cover;
 }
 
 .imagenDiv8 {
-  display: inline-block; /* Permitir que el div se ajuste al tamaño del contenido */
-  max-width: 400px; /* Ancho máximo del div contenedor */
-  height: auto; /* Altura automática para adaptarse al contenido */
+  display: inline-block;
+  max-width: 400px;
+  height: auto;
   vertical-align: bottom;
 }
 
 .imagenDiv8 img {
-  width: 100%; /* Ancho de la imagen al 100% del div contenedor */
-  height: auto; /* Altura automática para mantener la proporción */
-  object-fit: cover; /* La imagen cubre completamente el contenedor */
+  width: 100%;
+  height: auto;
+  object-fit: cover;
 }
