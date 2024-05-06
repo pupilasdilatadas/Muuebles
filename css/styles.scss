@@ -1,0 +1,168 @@
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+
+.btn-bd-primary {
+    --bs-btn-font-weight: 600;
+    --bs-btn-color: var(--bs-white);
+    --bs-btn-bg: var(--bd-violet-bg);
+    --bs-btn-border-color: var(--bd-violet-bg);
+    --bs-btn-hover-color: var(--bs-white);
+    --bs-btn-hover-bg: #6528e0;
+    --bs-btn-hover-border-color: #6528e0;
+    --bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);
+    --bs-btn-active-color: var(--bs-btn-hover-color);
+    --bs-btn-active-bg: #5a23c8;
+    --bs-btn-active-border-color: #5a23c8;
+}
+
+:root, [data-bs-theme="light"] {
+    --bd-purple: #4c0bce;
+    --bd-violet: #712cf9;
+    --bd-accent: #ffe484;
+    --bd-violet-rgb: 112.520718, 44.062154, 249.437846;
+    --bd-accent-rgb: 255, 228, 132;
+    --bd-pink-rgb: 214, 51, 132;
+    --bd-teal-rgb: 32, 201, 151;
+    --bd-violet-bg: var(--bd-violet);
+    --bd-toc-color: var(--bd-violet);
+    --bd-sidebar-link-bg: rgba(var(--bd-violet-rgb), .1);
+    --bd-callout-link: 10, 88, 202;
+    --bd-callout-code-color: #ab296a;
+    --bd-pre-bg: var(--bs-tertiary-bg);
+}
+
+body{
+    background: #ffffff;
+}
+
+.navbar{
+    background-color: #7658b2 !important; 
+}
+
+.header1{
+    margin-left: 5rem;
+    margin-top: 2rem;
+}
+
+.header2{
+    margin-left: 5rem;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+}
+
+.seccion1{
+  margin-left: 3rem;
+  margin-top: 3rem;
+}
+
+.c1ak {
+    width: 100%; /* Ancho del contenedor principal */
+    max-width: 85%; /* Ancho máximo para limitar el tamaño del contenedor principal */
+    margin-left: 5rem;
+    border: 2px solid #7658b2;
+  }
+  
+.img-container {
+  font-size: 0; /* Evitar espacio adicional entre los elementos inline-block */
+}
+
+.img-container > div {
+  display: inline-block; /* Permitir que los divs se ajusten al tamaño del contenido */
+  margin: 5px; /* Espacio entre las imágenes */
+  width: calc(25% - 10px); 
+}
+
+
+.imagenDiv1 {
+  display: inline-block; /* Permitir que el div se ajuste al tamaño del contenido */
+  max-width: 400px; /* Ancho máximo del div contenedor */
+  height: auto; /* Altura automática para adaptarse al contenido */
+  vertical-align: top;
+}
+.imagenDiv1 img {
+  width: 100%; /* Ancho de la imagen al 100% del div contenedor */
+  height: auto; /* Altura automática para mantener la proporción */
+  object-fit: cover; /* La imagen cubre completamente el contenedor */
+}
+
+.imagenDiv2 {
+  display: inline-block; /* Permitir que el div se ajuste al tamaño del contenido */
+  max-width: 400px; /* Ancho máximo del div contenedor */
+  height: auto; /* Altura automática para adaptarse al contenido */
+}
+.imagenDiv2 img {
+  width: 100%; /* Ancho de la imagen al 100% del div contenedor */
+  height: auto; /* Altura automática para mantener la proporción */
+  object-fit: cover; /* La imagen cubre completamente el contenedor */
+}
+
+.imagenDiv3 {
+  display: inline-block; /* Permitir que el div se ajuste al tamaño del contenido */
+  max-width: 400px; /* Ancho máximo del div contenedor */
+  height: auto; /* Altura automática para adaptarse al contenido */
+  vertical-align: top;
+}
+.imagenDiv3 img {
+  width: 100%; /* Ancho de la imagen al 100% del div contenedor */
+  height: auto; /* Altura automática para mantener la proporción */
+  object-fit: cover; /* La imagen cubre completamente el contenedor */
+}
+
+.imagenDiv4 {
+  display: inline-block; /* Permitir que el div se ajuste al tamaño del contenido */
+  max-width: 400px; /* Ancho máximo del div contenedor */
+  height: auto; /* Altura automática para adaptarse al contenido */
+  vertical-align: top;
+}
+.imagenDiv4 img {
+  width: 100%; /* Ancho de la imagen al 100% del div contenedor */
+  height: auto; /* Altura automática para mantener la proporción */
+  object-fit: cover; /* La imagen cubre completamente el contenedor */
+}
+
+.imagenDiv5 {
+  display: inline-block; /* Permitir que el div se ajuste al tamaño del contenido */
+  max-width: 400px; /* Ancho máximo del div contenedor */
+  height: auto; /* Altura automática para adaptarse al contenido */
+}
+.imagenDiv5 img {
+  width: 100%; /* Ancho de la imagen al 100% del div contenedor */
+  height: auto; /* Altura automática para mantener la proporción */
+  object-fit: cover; /* La imagen cubre completamente el contenedor */
+}
+
+.imagenDiv6 {
+  display: inline-block; /* Permitir que el div se ajuste al tamaño del contenido */
+  max-width: 400px; /* Ancho máximo del div contenedor */
+  height: auto; /* Altura automática para adaptarse al contenido */
+  vertical-align: bottom;
+}
+.imagenDiv6 img {
+  width: 100%; /* Ancho de la imagen al 100% del div contenedor */
+  height: auto; /* Altura automática para mantener la proporción */
+  object-fit: cover; /* La imagen cubre completamente el contenedor */
+}
+
+.imagenDiv7 {
+  display: inline-block; /* Permitir que el div se ajuste al tamaño del contenido */
+  max-width: 400px; /* Ancho máximo del div contenedor */
+  height: auto; /* Altura automática para adaptarse al contenido */
+  vertical-align: top;
+}
+.imagenDiv7 img {
+  width: 100%; /* Ancho de la imagen al 100% del div contenedor */
+  height: auto; /* Altura automática para mantener la proporción */
+  object-fit: cover; /* La imagen cubre completamente el contenedor */
+}
+
+.imagenDiv8 {
+  display: inline-block; /* Permitir que el div se ajuste al tamaño del contenido */
+  max-width: 400px; /* Ancho máximo del div contenedor */
+  height: auto; /* Altura automática para adaptarse al contenido */
+  vertical-align: bottom;
+}
+
+.imagenDiv8 img {
+  width: 100%; /* Ancho de la imagen al 100% del div contenedor */
+  height: auto; /* Altura automática para mantener la proporción */
+  object-fit: cover; /* La imagen cubre completamente el contenedor */
+}
