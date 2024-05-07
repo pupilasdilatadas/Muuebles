@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login con Local Storage</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Registro</h2>
+        <input type="text" id="nombre" placeholder="Nombre">
+        <input type="email" id="correo" placeholder="Correo electrónico">
+        <input type="password" id="contrasena" placeholder="Contraseña">
+        <button onclick="registrarUsuario()">Registrarse</button>
+    </div>
+    <div class="container">
+        <h2>Login</h2>
+        <input type="email" id="correoLogin" placeholder="Correo electrónico">
+        <input type="password" id="contrasenaLogin" placeholder="Contraseña">
+        <button onclick="iniciarSesion()">Iniciar sesión</button>
+    </div>
+    <script src="../js/registro.js"></script>
+</body>
+</html>
