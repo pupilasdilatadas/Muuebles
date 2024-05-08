@@ -2,6 +2,7 @@ function registrarUsuario() {
     var nombre = document.getElementById("nombre").value;
     var correo = document.getElementById("correo").value;
     var contrasena = document.getElementById("contrasena").value;
+    var tipoUsuario = document.getElementById("tipoUsuario").value;
 
     // Comprobación si el correo ya está registrado
     if (localStorage.getItem(correo)) {
@@ -10,7 +11,8 @@ function registrarUsuario() {
         var usuario = {
             nombre: nombre,
             correo: correo,
-            contrasena: contrasena
+            contrasena: contrasena,
+            tipo: tipoUsuario
         };
         localStorage.setItem(correo, JSON.stringify(usuario));
         alert("Usuario registrado correctamente");
@@ -25,8 +27,8 @@ function iniciarSesion() {
 
     if (usuario && usuario.contrasena === contrasena) {
         alert("Inicio de sesión exitoso. ¡Bienvenido, " + usuario.nombre + "!");
-        // Aquí puedes redirigir al usuario a otra página, por ejemplo:
-        // window.location.href = "dashboard.html";
+    
+        window.location.href = "../html/index.html";
     } else {
         alert("Correo electrónico o contraseña incorrectos");
     }

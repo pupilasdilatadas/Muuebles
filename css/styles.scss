@@ -1,44 +1,37 @@
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
 
-.btn-bd-primary {
-    --bs-btn-font-weight: 600;
-    --bs-btn-color: var(--bs-white);
-    --bs-btn-bg: var(--bd-violet-bg);
-    --bs-btn-border-color: var(--bd-violet-bg);
-    --bs-btn-hover-color: var(--bs-white);
-    --bs-btn-hover-bg: #6528e0;
-    --bs-btn-hover-border-color: #6528e0;
-    --bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);
-    --bs-btn-active-color: var(--bs-btn-hover-color);
-    --bs-btn-active-bg: #5a23c8;
-    --bs-btn-active-border-color: #5a23c8;
-}
-
-:root, [data-bs-theme="light"] {
-    --bd-purple: #4c0bce;
-    --bd-violet: #712cf9;
-    --bd-accent: #ffe484;
-    --bd-violet-rgb: 112.520718, 44.062154, 249.437846;
-    --bd-accent-rgb: 255, 228, 132;
-    --bd-pink-rgb: 214, 51, 132;
-    --bd-teal-rgb: 32, 201, 151;
-    --bd-violet-bg: var(--bd-violet);
-    --bd-toc-color: var(--bd-violet);
-    --bd-sidebar-link-bg: rgba(var(--bd-violet-rgb), .1);
-    --bd-callout-link: 10, 88, 202;
-    --bd-callout-code-color: #ab296a;
-    --bd-pre-bg: var(--bs-tertiary-bg);
-}
-
 body{
     background: #ffffff;
 }
+
+//Navbar
 
 .navbar{
     background-color: #ffffff !important; 
     padding: 10px; 
     border-bottom: 2px solid #000000;
 } 
+
+//Botones bajo la navbar
+
+.btn-transparent {
+  position: relative;
+}
+
+.btn-transparent::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background-color: black;
+  transition: all 0.5s ease;
+}
+
+.btn-transparent:hover::after {
+  height: 6px;
+}
 
 // Barra de busqueda
 
