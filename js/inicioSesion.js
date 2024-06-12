@@ -29,6 +29,7 @@ function iniciarSesion() {
 
 function cerrarSesion() {
     localStorage.removeItem('usuario');
+    localStorage.removeItem('carrito');
 
     window.location.href = "../html/iniciarSesion.html";
 }

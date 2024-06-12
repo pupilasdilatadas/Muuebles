@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", function() {
                     </div>
                     <div class="col-md-4">
                         <h5>Dudas y Preguntas</h5>
-                        <p><a href="${basePath}preguntasFrecuentes.html" class="text-white">Preguntas Frecuentes</a></p>
+                        <p><a href="${basePath}index.html" class="text-white">Preguntas Frecuentes</a></p>
                     </div>
                 </div>
             </div>
