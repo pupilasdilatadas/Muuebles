@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agregar Proveedor</title>
+    <link rel="stylesheet" href="../../css/styles.css">
+</head>
+<body>
+
+    <div class="seccion1">
+        <div id="navbarContainer"></div> <!-- navbar -->
+        <div class="boton-volver">
+            <a href="../inventario/proveedores.html" class="btn btn-secondary">Volver</a>
+        </div>
+    </div>
+    
+    <div class="container agregar-producto-container">
+        <div class="form-container">
+            <h2 class="text-center mb-4">Agregar Proveedor</h2>
+            <form id="agregarProveedorForm">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="mb-3">
+                            <label for="nombreProv" class="form-label">Nombre:</label>
+                            <input type="text" class="form-control" id="nombreProv" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="telefonoProv" class="form-label">Teléfono:</label>
+                            <input type="tel" class="form-control" id="telefonoProv" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="emailProv" class="form-label">Correo Electrónico:</label>
+                            <input type="email" class="form-control" id="emailProv" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="direccionProv" class="form-label">Dirección:</label>
+                            <input type="text" class="form-control" id="direccionProv" required>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="mb-3">
+                            <label for="ciudadProv" class="form-label">Ciudad:</label>
+                            <input type="text" class="form-control" id="ciudadProv" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="paisProv" class="form-label">País:</label>
+                            <input type="text" class="form-control" id="paisProv" required>
+                        </div>
+                        <input type="hidden" id="fechaRegistroProv" name="fechaRegistroProv">
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-agregar2">Agregar Proveedor</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="../../js/crearProveedor.js"></script>
+    <script src="../../js/navbar.js"></script>
+    <script src="../../js/checkRoles.js"></script>
+</body>
+</html>

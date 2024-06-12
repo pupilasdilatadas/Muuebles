@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito de Compras</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <div class="wrapper">
+
+        <div class="seccion1">
+            <div id="navbarContainer"></div>
+        </div>
+
+        <div class="content">
+            <div class="carrito-container">
+                <div id="carritoProductosContainer" class="carrito-productos"></div>
+                <div class="carrito-subtotal">
+                    <h5>(Envío gratis a RM)</h5>
+                    <h3>Subtotal</h3>
+                    <p id="subtotal">$0</p>
+                    <h5 id="envioGratis" style="display: none;">¡Tienes envío gratis!</h5> 
+                    <button class="btn btn-dark btn-comprar">Comprar</button>
+                </div>
+                <div class="alert alert-info" role="alert">
+                    Envío gratis en compras sobre $100.000 pesos chilenos
+                </div>
+            </div>
+        </div>
+
+        <div id="footerContainer"></div> <!-- footer -->
+
+    </div>  
+
+    <script src="../js/footer.js"></script>
+    <script src="../js/navbar.js"></script>
+    <script src="../js/carrito.js"></script>
+    <script src="../js/checkRoles.js"></script>
+</body>
+</html>

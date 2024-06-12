@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agregar Instalación Cliente</title>
+    <link rel="stylesheet" href="../../css/styles.css">
+</head>
+<body>
+
+    <div class="wrapper">
+        <div class="seccion1">
+            <div id="navbarContainer"></div> <!-- navbar -->
+        </div>
+
+        <div class="content">
+            <div class="container agregar-producto-container">
+                <div class="form-container"> 
+                    <h2 class="text-center mb-4">Agregar Instalación</h2>
+                    <form id="agregarInstalacionForm">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="mb-3">
+                                    <label for="nombreCliente" class="form-label">Nombre</label>
+                                    <input type="text" class="form-control" id="nombreCliente" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="fechaIngreso" class="form-label">Fecha de Ingreso:</label>
+                                    <input type="date" class="form-control" id="fechaIngreso" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="fechaVisita" class="form-label">Fecha de Visita:</label>
+                                    <input type="date" class="form-control" id="fechaVisita" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="costo" class="form-label">Costo:</label>
+                                    <input type="text" class="form-control" id="costo" readonly>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="muebleInstalar" class="form-label">Mueble que desea instalar:</label>
+                                    <select class="form-select" id="muebleInstalar" required>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="mb-3">
+                                    <label for="telefono" class="form-label">Teléfono:</label>
+                                    <input type="tel" class="form-control" id="telefono" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="direccion" class="form-label">Dirección:</label>
+                                    <input type="text" class="form-control" id="direccion" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="descripcion" class="form-label">Descripción:</label>
+                                    <textarea class="form-control" id="descripcion" rows="3" required></textarea>
+                                </div>
+                                <div class="alert alert-info" role="alert">
+                                    Al pagar, recibirá una llamada en 24 horas hábiles para coordinar la instalación.
+                                </div>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-agregar2">Agregar al carrito</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div id="footerContainer"></div> <!-- footer -->
+    </div>
+
+    <script src="../../js/footer.js"></script>
+    <script src="../../js/crearInstalacion.js"></script>
+    <script src="../../js/navbar.js"></script>
+    <script src="../../js/checkRoles.js"></script>
+</body>
+</html>

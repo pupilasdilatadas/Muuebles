@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagando Total</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <div class="seccion1">
+        <div id="navbarContainer"></div> <!-- navbar -->
+        
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-6 bg-light rounded p-4">
+                    <h3 class="mb-3">Contacto</h3>
+                    <input type="text" class="form-control mb-2" placeholder="Email o Teléfono">
+                    <h3 class="mb-3">Entrega</h3>
+                    <input type="text" class="form-control mb-2" placeholder="Región">
+                    <input type="text" class="form-control mb-2" placeholder="Nombre">
+                    <input type="text" class="form-control mb-2" placeholder="Dirección">
+                    <input type="text" class="form-control mb-2" placeholder="Casa, Apartamento, etc.">
+                    <input type="text" class="form-control mb-2" placeholder="Ciudad">
+                    <div class="form-check mb-3">
+                        <input type="checkbox" class="form-check-input" id="guardarDatos">
+                        <label class="form-check-label" for="guardarDatos">Guardar mis datos para más rapidez en la siguiente compra</label>
+                    </div>
+                    <h3 class="mb-3">Métodos de Envío</h3>
+                    <div class="form-check">
+                        <input type="radio" class="form-check-input" name="envio" id="estandar">
+                        <label class="form-check-label" for="estandar">Estándar (3 a 4 días hábiles) ($4.990)</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="radio" class="form-check-input" name="envio" id="rapido">
+                        <label class="form-check-label" for="rapido">Rápido (entrega en 24 horas) ($7.990)</label>
+                    </div>
+                    <h3 class="mb-3">Pago</h3>
+                    <div class="form-check">
+                        <input type="radio" class="form-check-input" name="pago" id="debito">
+                        <label class="form-check-label" for="debito">Débito</label>
+                    </div>
+                    <div class="form-check mb-3">
+                        <input type="radio" class="form-check-input" name="pago" id="credito">
+                        <label class="form-check-label" for="credito">Crédito</label>
+                    </div>
+                    <input type="text" class="form-control mb-2" placeholder="Número de Tarjeta">
+                    <input type="password" class="form-control mb-2" placeholder="CVV" maxlength="3">
+                    <input type="text" class="form-control mb-2" placeholder="Mes de Expiración">
+                    <input type="text" class="form-control mb-2" placeholder="Día de Expiración">
+                    <h3 class="mb-3">Dirección de Facturación</h3>
+                    <input type="text" class="form-control mb-2" placeholder="Dirección">
+                </div>
+                <div class="col-md-6 bg-light rounded p-4">
+                    <h3>Nombre de productos e instalaciones que lleva</h3>
+                    <div class="carrito-container">
+                    </div>
+                    <p id="metodoEnvio">Método de envío: Estándar (3 a 4 días hábiles)</p>
+                    <p id="costoEnvio">$4.990</p>
+                    <p id="subtotal">Subtotal: $0.00</p>
+                    <h2 class="total-pagando">Total: $0.00</h2>
+                    <button class="btn btn-dark mt-3" disabled>Pagar Ahora</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../js/navbar.js"></script>
+    <script src="../js/checkRoles.js"></script>
+    <script src="../js/pagando.js"></script>
+</body>
+</html>

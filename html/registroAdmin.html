@@ -9,31 +9,22 @@
 </head>
 <body class="bg-light-gray-regis d-flex justify-content-center align-items-center vh-100">
     <div class="card p-4 registro-card-regis">
-        <h2 class="card-title-regis text-center">Registro</h2>
+        <h2 class="card-title-regis text-center">Registro Administradores</h2>
         <form id="registroForm">
             <div class="form-group-regis">
                 <label for="nombre">Nombre:</label>
                 <input type="text" class="form-control-regis" id="nombre" placeholder="Nombre" required>
             </div>
             <div class="form-group-regis">
-                <label for="correo">Correo:</label>
+                <label for="correo">Correo electrónico:</label>
                 <input type="email" class="form-control-regis" id="correo" placeholder="Correo electrónico" required>
             </div>
             <div class="form-group-regis">
                 <label for="contrasena">Contraseña:</label>
                 <input type="password" class="form-control-regis" id="contrasena" placeholder="Contraseña" required>
             </div>
-            <div class="form-group-regis">
-                <label for="tipoUsuario">Tipo de Usuario:</label>
-                <select id="tipoUsuario" class="form-control-regis">
-                    <option value="Cliente">Cliente</option>
-                    <option value="Vendedor">Vendedor</option>
-                </select>
-            </div>
-            <button type="button" class="btn btn-dark btn-block-regis" onclick="registrarUsuario()">Registrarse</button>
-            <div class="text-center-sesion mt-3">
-                <p> <a href="iniciarSesion.html">Volver a inicio de sesión</a></p>
-            </div>
+            <input type="hidden" id="tipoUsuario" value="Admin">
+            <button type="button" class="btn btn-primary btn-block-regis" onclick="registrarAdministrador()">Registrarse</button>
         </form>
     </div>
 

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editar Producto</title>
+    <link rel="stylesheet" href="../../css/styles.css">
+</head>
+<body>
+
+    <div class="seccion1">
+        <div id="navbarContainer"></div> <!-- Navbar -->
+        <div class="boton-volver">
+            <a href="../inventario/productoInv.html" class="btn btn-secondary">Volver</a>
+        </div>
+    </div>
+
+    <div class="container agregar-producto-container">
+        <div class="form-container"> 
+            <h2 class="text-center mb-4">Editar Producto</h2>
+            <form id="editarProductoForm">
+                <input type="hidden" id="editProductId">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="mb-3">
+                            <label for="editProductName" class="form-label">Nombre:</label>
+                            <input type="text" class="form-control" id="editProductName" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="editProductCategory" class="form-label">Categoría:</label>
+                            <select class="form-select" id="editProductCategory" required>
+                                <option value="Mesas">Mesas</option>
+                                <option value="Sillas">Sillas</option>
+                                <option value="Estantes y repisas">Estantes y repisas</option>
+                                <option value="Vitrinas y almacenamiento">Vitrinas y almacenamiento</option>
+                                <option value="Muebles de Bar">Muebles de Bar</option>
+                                <option value="Sofás">Sofás</option>
+                                <option value="Racks">Racks</option>
+                                <option value="Mueble de comedor">Mueble de comedor</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="editProductWarranty" class="form-label">Garantía:</label>
+                            <input type="number" class="form-control" id="editProductWarranty" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="editProductStock" class="form-label">Stock:</label>
+                            <input type="number" class="form-control" id="editProductStock" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="editProductPrice" class="form-label">Precio:</label>
+                            <input type="number" class="form-control" id="editProductPrice" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="editProductImage" class="form-label">URL de la Imagen</label>
+                            <input type="url" class="form-control" id="editProductImage" required>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="mb-3">
+                            <label for="editProductProvider" class="form-label">Proveedor:</label>
+                            <input type="text" class="form-control" id="editProductProvider" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="editProductBrand" class="form-label">Marca:</label>
+                            <input type="text" class="form-control" id="editProductBrand" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="editProductMaterial" class="form-label">Tipo de Material:</label>
+                            <input type="text" class="form-control" id="editProductMaterial" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="editProductSize" class="form-label">Medidas:</label>
+                            <input type="text" class="form-control" id="editProductSize" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="editProductWeight" class="form-label">Peso:</label>
+                            <input type="text" class="form-control" id="editProductWeight" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="editProductDescription" class="form-label">Descripción:</label>
+                            <textarea class="form-control" id="editProductDescription" rows="3"></textarea>
+                        </div>
+                        <div class="mb-3">
+                            <label for="editProductEntryDate" class="form-label">Fecha de Ingreso:</label>
+                            <input type="date" class="form-control" id="editProductEntryDate" required>
+                        </div>
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-agregar2">Guardar Cambios</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="../../js/editarProducto.js"></script>
+    <script src="../../js/navbar.js"></script>
+    <script src="../../js/checkRoles.js"></script>
+</body>
+</html>

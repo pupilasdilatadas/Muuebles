@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ventas</title>
+    <link rel="stylesheet" href="../../css/styles.css">
+</head>
+<body class="body-ventas">
+
+    <div class="seccion1">
+        <div id="navbarContainer"></div> <!-- navbar -->    
+        <div class="boton-volver">
+            <a href="../inventario.html" class="btn btn-secondary">Volver al Inventario</a>
+        </div>
+    </div>
+
+    <div class="container-ventas my-4">
+        <h2>Ventas</h2>
+        <div class="d-flex justify-content-between align-items-center mb-3">
+            <h4 id="tableTitle">Ventas de Productos</h4>
+            <select id="toggleTableSelect" class="form-control">
+                <option value="productos">Ventas de Productos</option>
+                <option value="instalaciones">Ventas de Instalaciones</option>
+            </select>
+        </div>
+        <div class="row">
+            <div class="col-md-9">
+                <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <th>Fecha de venta</th>
+                            <th>Producto vendido</th>
+                            <th>Precio unitario</th>
+                            <th>Cantidad vendida</th>
+                            <th>Total</th>
+                            <th>Proveedor</th>
+                        </tr>
+                    </thead>
+                    <tbody id="ventasTableBody">
+                    </tbody>
+                </table>
+            </div>
+            <div class="col-md-3">
+                <div class="my-4">
+                    <h3>Índices Generales: Último mes</h3>
+                    <div class="card-ventas text-center mb-3">
+                        <div class="card-body-ventas">
+                            <h5 class="card-title-ventas">Total Venta</h5>
+                            <p class="card-text-ventas" id="totalVenta">0</p>
+                        </div>
+                    </div>
+                    <div class="card-ventas text-center mb-3">
+                        <div class="card-body-ventas">
+                            <h5 class="card-title-ventas">Ingresos</h5>
+                            <p class="card-text-ventas" id="totalIngresos">0</p>
+                        </div>
+                    </div>
+                    <div class="card-ventas text-center mb-3">
+                        <div class="card-body-ventas">
+                            <h5 class="card-title-ventas" id="ventasIndexTitle">Productos Vendidos</h5>
+                            <p class="card-text-ventas" id="totalItems">0</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="../../js/navbar.js"></script>
+    <script src="../../js/checkRoles.js"></script>
+    <script src="../../js/ventas.js"></script>
+</body>
+</html>

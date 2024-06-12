@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editar Proveedor</title>
+    <link rel="stylesheet" href="../../css/styles.css">
+</head>
+<body>
+
+    <div class="seccion1">
+        <div id="navbarContainer"></div> <!-- Navbar -->
+        <div class="boton-volver">
+            <a href="../inventario/proveedores.html" class="btn btn-secondary">Volver</a>
+        </div>
+    </div>
+
+    <div class="container editar-proveedor-container">
+        <div class="form-container"> 
+            <h2 class="text-center mb-4">Editar Proveedor</h2>
+            <form id="editarProveedorForm">
+                <input type="hidden" id="editProviderId">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="mb-3">
+                            <label for="editProviderName" class="form-label">Nombre:</label>
+                            <input type="text" class="form-control" id="editProviderName" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="editProviderContact" class="form-label">Contacto:</label>
+                            <input type="text" class="form-control" id="editProviderContact" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="editProviderPhone" class="form-label">Teléfono:</label>
+                            <input type="text" class="form-control" id="editProviderPhone" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="editProviderEmail" class="form-label">Correo Electrónico:</label>
+                            <input type="email" class="form-control" id="editProviderEmail" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="editProviderAddress" class="form-label">Dirección:</label>
+                            <input type="text" class="form-control" id="editProviderAddress" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="editProviderRegistrationDate" class="form-label">Fecha de Registro:</label>
+                            <input type="date" class="form-control" id="editProviderRegistrationDate" required>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-agregar2">Guardar Cambios</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="../../js/editarProveedor.js"></script>
+    <script src="../../js/navbar.js"></script>
+    <script src="../../js/checkRoles.js"></script>
+</body>
+</html>

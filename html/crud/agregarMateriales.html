@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agregar Material</title>
+    <link rel="stylesheet" href="../../css/styles.css">
+</head>
+<body>
+
+    <div class="seccion1">
+        <div id="navbarContainer"></div> <!-- navbar -->
+        <div class="boton-volver">
+            <a href="../inventario/materiales.html" class="btn btn-secondary">Volver</a>
+        </div>
+    </div>
+    
+    <div class="container agregar-material-container">
+        <div class="form-container"> 
+            <h2 class="text-center mb-4">Agregar Material</h2>
+            <form id="agregarMaterialForm">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="mb-3">
+                            <label for="nombreMat" class="form-label">Nombre Material:</label>
+                            <input type="text" class="form-control" id="nombreMat" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="costoMat" class="form-label">Costo por unidad:</label>
+                            <input type="number" class="form-control" id="costoMat" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="cantidadMat" class="form-label">Cantidad:</label>
+                            <input type="number" class="form-control" id="cantidadMat" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="proveedorMat" class="form-label">Proveedor:</label>
+                            <input type="text" class="form-control" id="proveedorMat" required>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="mb-3">
+                            <label for="descripcionMat" class="form-label">Descripción:</label>
+                            <textarea class="form-control" id="descripcionMat" rows="3"></textarea>
+                        </div>
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-agregar2">Agregar Material</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="../../js/crearMateriales.js"></script>
+    <script src="../../js/navbar.js"></script>
+    <script src="../../js/checkRoles.js"></script>
+</body>
+</html>

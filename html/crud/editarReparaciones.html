@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editar Reparación</title>
+    <link rel="stylesheet" href="../../css/styles.css">
+</head>
+<body>
+
+    <div class="seccion1">
+        <div id="navbarContainer"></div> <!-- Navbar -->
+        <div class="boton-volver">
+            <a href="../inventario/reparaciones.html" class="btn btn-secondary">Volver</a>
+        </div>
+    </div>
+
+    <div class="container editar-reparacion-container">
+        <div class="form-container"> 
+            <h2 class="text-center mb-4">Editar Reparación</h2>
+            <form id="editarReparacionForm">
+                <input type="hidden" id="editReparationId">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="mb-3">
+                            <label for="editReparationClientName" class="form-label">Nombre del Cliente:</label>
+                            <input type="text" class="form-control" id="editReparationClientName" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="editReparationRequestDate" class="form-label">Fecha de Solicitud:</label>
+                            <input type="date" class="form-control" id="editReparationRequestDate" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="editReparationStatus" class="form-label">Estado de la Reparación:</label>
+                            <select class="form-select" id="editReparationStatus" required>
+                                <option value="Pendiente">Pendiente</option>
+                                <option value="En Proceso">En Proceso</option>
+                                <option value="Completada">Completada</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="mb-3">
+                            <label for="editReparationEstimatedCost" class="form-label">Costo Estimado:</label>
+                            <input type="number" class="form-control" id="editReparationEstimatedCost" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="editReparationEstimatedDeliveryDate" class="form-label">Fecha de Entrega Estimada:</label>
+                            <input type="date" class="form-control" id="editReparationEstimatedDeliveryDate" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="editReparationNotes" class="form-label">Notas Adicionales:</label>
+                            <textarea class="form-control" id="editReparationNotes" rows="3"></textarea>
+                        </div>
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-agregar2">Guardar Cambios</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="../../js/editarReparaciones.js"></script>
+    <script src="../../js/navbar.js"></script>
+    <script src="../../js/checkRoles.js"></script>
+</body>
+</html>

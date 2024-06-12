@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editar Material</title>
+    <link rel="stylesheet" href="../../css/styles.css">
+</head>
+<body>
+
+    <div class="seccion1">
+        <div id="navbarContainer"></div> <!-- Navbar -->
+        <div class="boton-volver">
+            <a href="../inventario/materiales.html" class="btn btn-secondary">Volver</a>
+        </div>
+    </div>
+    
+    <div class="container editar-material-container">
+        <div class="form-container"> 
+            <h2 class="text-center mb-4">Editar Material</h2>
+            <form id="editarMaterialForm">
+                <input type="hidden" id="editMaterialId">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="mb-3">
+                            <label for="editMaterialNombre" class="form-label">Nombre Material:</label>
+                            <input type="text" class="form-control" id="editMaterialNombre" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="editMaterialCosto" class="form-label">Costo por unidad:</label>
+                            <input type="number" class="form-control" id="editMaterialCosto" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="editMaterialCantidad" class="form-label">Cantidad:</label>
+                            <input type="number" class="form-control" id="editMaterialCantidad" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="editMaterialProveedor" class="form-label">Proveedor:</label>
+                            <input type="text" class="form-control" id="editMaterialProveedor" required>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="mb-3">
+                            <label for="editMaterialDescripcion" class="form-label">Descripción:</label>
+                            <textarea class="form-control" id="editMaterialDescripcion" rows="3"></textarea>
+                        </div>
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-agregar2">Guardar Cambios</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="../../js/editarMateriales.js"></script>
+    <script src="../../js/navbar.js"></script>
+    <script src="../../js/checkRoles.js"></script>
+</body>
+</html>

@@ -7,51 +7,92 @@
     <link rel="stylesheet" href="../../css/styles.css">
 </head>
 <body>
-    <div class="container">
-        <h2>Agregar Producto</h2>
-        <form id="agregarProductoForm">
-            <div class="mb-3">
-                <label for="idProd" class="form-label">ID:</label>
-                <input type="text" class="form-control" id="idProd" required>
-            </div>
-            <div class="mb-3">
-                <label for="nombreProd" class="form-label">Nombre:</label>
-                <input type="text" class="form-control" id="nombreProd" required>
-            </div>
-            <div class="mb-3">
-                <label for="categoriaProd" class="form-label">Categoría:</label>
-                <select class="form-select" id="categoriaProd" required>
-                    <option value="Mesas">Mesas</option>
-                    <option value="Sillas">Sillas</option>
-                    <option value="Estantes y repisas">Estantes y repisas</option>
-                    <option value="Vitrinas y almacenamiento">Vitrinas y almacenamiento</option>
-                    <option value="Muebles de Bar">Muebles de Bar</option>
-                    <option value="Sofás">Sofás</option>
-                    <option value="Racks">Racks</option>
-                    <option value="Mueble de comedor">Mueble de comedor</option>
-                </select>
-            </div>
-            <div class="mb-3">
-                <label for="garantiaProd" class="form-label">Garantía:</label>
-                <input type="number" class="form-control" id="garantiaProd" required>
-            </div>
-            <div class="mb-3">
-                <label for="stockProd" class="form-label">Stock:</label>
-                <input type="number" class="form-control" id="stockProd" required>
-            </div>
-            <div class="mb-3">
-                <label for="precioProd" class="form-label">Precio:</label>
-                <input type="number" class="form-control" id="precioProd" required>
-            </div>
-            <div class="mb-3">
-                <label for="imagenProd" class="form-label">Imagen:</label>
-                <input type="file" class="form-control" id="imagenProd" accept="image/*" required>
-            </div>
-            <button type="submit" class="btn btn-primary">Agregar Producto</button>
-        </form>
+
+    <div class="seccion1">
+        <div id="navbarContainer"></div> <!-- Navbar -->
+        <div class="boton-volver">
+            <a href="../inventario/productoInv.html" class="btn btn-secondary">Volver</a>
+        </div>
+    </div>
+    
+    <div class="container agregar-producto-container">
+        <div class="form-container"> 
+            <h2 class="text-center mb-4">Agregar Producto</h2>
+            <form id="agregarProductoForm">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="mb-3">
+                            <label for="nombreProd" class="form-label">Nombre:</label>
+                            <input type="text" class="form-control" id="nombreProd" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="categoriaProd" class="form-label">Categoría:</label>
+                            <select class="form-select" id="categoriaProd" required>
+                                <option value="Mesas">Mesas</option>
+                                <option value="Sillas">Sillas</option>
+                                <option value="Estantes y repisas">Estantes y repisas</option>
+                                <option value="Vitrinas y almacenamiento">Vitrinas y almacenamiento</option>
+                                <option value="Muebles de Bar">Muebles de Bar</option>
+                                <option value="Sofás">Sofás</option>
+                                <option value="Racks">Racks</option>
+                                <option value="Mueble de comedor">Mueble de comedor</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="garantiaProd" class="form-label">Garantía:</label>
+                            <input type="number" class="form-control" id="garantiaProd" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="stockProd" class="form-label">Stock:</label>
+                            <input type="number" class="form-control" id="stockProd" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="precioProd" class="form-label">Precio:</label>
+                            <input type="number" class="form-control" id="precioProd" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="imagenProd" class="form-label">URL de la Imagen</label>
+                            <input type="url" class="form-control" id="imagenProd" required>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="mb-3">
+                            <label for="proveedorProd" class="form-label">Proveedor:</label>
+                            <input type="text" class="form-control" id="proveedorProd" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="marcaProd" class="form-label">Marca:</label>
+                            <input type="text" class="form-control" id="marcaProd" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="materialProd" class="form-label">Tipo de Material:</label>
+                            <input type="text" class="form-control" id="materialProd" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="medidasProd" class="form-label">Medidas:</label>
+                            <input type="text" class="form-control" id="medidasProd" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="pesoProd" class="form-label">Peso:</label>
+                            <input type="text" class="form-control" id="pesoProd" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="descripcionProd" class="form-label">Descripción:</label>
+                            <textarea class="form-control" id="descripcionProd" rows="3"></textarea>
+                        </div>
+                        <div class="mb-3">
+                            <label for="fechaIngresoProd" class="form-label">Fecha de Ingreso:</label>
+                            <input type="date" class="form-control" id="fechaIngresoProd" required>
+                        </div>
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-agregar2">Agregar Producto</button>
+            </form>
+        </div>
     </div>
 
     <script src="../../js/crearProducto.js"></script>
-
+    <script src="../../js/navbar.js"></script>
+    <script src="../../js/checkRoles.js"></script>
 </body>
 </html>
